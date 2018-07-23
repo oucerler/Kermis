@@ -1,10 +1,7 @@
 package Weekopdracht;
 
-public class Botsautos {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+public class Botsautos extends Attractie{
+	Botsautos(String naam, int prijs, int kaartjes){
+		super(naam, prijs, kaartjes);
 	}
-
 }

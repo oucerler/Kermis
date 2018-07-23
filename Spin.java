@@ -1,10 +1,7 @@
 package Weekopdracht;
 
-public class Spin {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+public class Spin extends Attractie {
+	Spin(String naam, int prijs, int kaartjes){
+		super(naam, prijs, kaartjes);
 	}
-
 }

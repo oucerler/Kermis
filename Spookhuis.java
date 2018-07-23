@@ -1,10 +1,7 @@
 package Weekopdracht;
 
-public class Spookhuis {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+public class Spookhuis extends Attractie{
+	Spookhuis(String naam, int prijs, int kaartjes){
+		super(naam, prijs, kaartjes);
 	}
-
 }

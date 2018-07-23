@@ -1,10 +1,7 @@
 package Weekopdracht;
 
-public class Ladderklimmen {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+public class Ladderklimmen extends Attractie{
+	Ladderklimmen(String naam, int prijs, int kaartjes){
+		super(naam, prijs, kaartjes);
 	}
-
 }

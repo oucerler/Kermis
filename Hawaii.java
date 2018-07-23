@@ -1,10 +1,7 @@
 package Weekopdracht;
 
-public class Hawaii {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+public class Hawaii extends Attractie{
+	Hawaii(String naam, int prijs, int kaartjes){
+		super(naam, prijs, kaartjes);
 	}
-
 }

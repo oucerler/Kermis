@@ -8,6 +8,9 @@ public class Kassa {
 	ArrayList<Attractie> verkochteAttracties = new ArrayList();
 	Scanner scanner = new Scanner(System.in);
 	//zet de scanner echt als field, dan heb je 1 keer die scanner
+	int totaalKaartjes;
+	ArrayList<Attractie> verkochteKaartjes = new ArrayList();
+	
 	
 	int verkopen() {
 		//we moeten iets terug hebben, dus ipv 'void' komt hier 'int'
@@ -16,5 +19,10 @@ public class Kassa {
 		System.out.println(invoer);
 		int getal = Integer.parseInt(invoer); //wrappers, hoe werkte dat ook al weer?
 		return getal;
+	}
+	void afrekenen(Attractie attractie) {
+		geldhoeveelheid += attractie.prijs;
+		totaalKaartjes += attractie.kaartjes;
+		System.out.println("Ik heb nu " + geldhoeveelheid + " euro omzet en " + totaalKaartjes + " kaartjes verkocht.");
 	}
 }
