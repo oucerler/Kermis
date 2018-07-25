@@ -5,7 +5,7 @@ public abstract class Attractie {
 	int prijs;
 	int oppervlakte;
 	int kaartjes;
-	int omzet;
+	int omzet;	
 	
 	Attractie(String naam, int prijs, int kaartjes){
 		this.naam = naam;

@@ -1,6 +1,7 @@
 package Weekopdracht;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 class KermisApp{
 	public static void main (String[] args) {
@@ -25,7 +26,24 @@ class Kermis{
 	}
 	
 	void starten() {
-		System.out.println("Dit zijn onze attracties");
+		System.out.println("Welkom bij de kermis!Druk op a om naar de attracties te gaan, o om de omzet in te zien, of k om het aantal verkochte kaartjes te zien. Druk op q om te stoppen");
+		boolean verder = true;
+		while (verder) { //initieert de while loop
+			Scanner scInp = new Scanner (System.in);
+			String scKiezen = scInp.nextLine();
+			if (scKiezen.equals("a")) {
+				startVerkoop();
+			}
+			if (scKiezen.equals("o")) {
+				kassa.afrekenen(null);//nu 'null' gedaan zodat ie niet meer rood is
+			}
+			if (scKiezen.equals("k")) {
+				kassa.kaartjesAantal(null);//nu 'null' gedaan zodat ie niet meer rood is
+			}
+			if (scKiezen.equals("q")) {
+				verder = false;
+			}
+		}
 		for(Attractie assortiment : attracties) {
 			System.out.println(assortiment);
 		}
@@ -38,4 +56,9 @@ class Kermis{
 		System.out.println("U heeft gekozen voor " + attractie);
 		kassa.afrekenen(attractie);
 	}
+	
+//	void zieOmzet() {
+//		int keuze = kassa.omzetBerekenen();
+//		Attractie attractie = attracties.get(keuze);	
+//	}
 }
